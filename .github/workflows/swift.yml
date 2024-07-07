@@ -22,6 +22,6 @@ jobs:
     - name: Build
       run: |
         cd Demo-CarPlayMusic
-        xcodebuild build -project GitHubActions.xcodeproj -scheme GitHubActions clean build -sdk iphoneos CODE_SIGNING_ALLOWED=No
+        xcodebuild build -project Demo-CarPlayMusic.xcodeproj -scheme Demo-CarPlayMusic clean build -sdk iphoneos CODE_SIGNING_ALLOWED=No
 
     
