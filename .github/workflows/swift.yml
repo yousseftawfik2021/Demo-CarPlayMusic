@@ -24,4 +24,9 @@ jobs:
         cd Demo-CarPlayMusic
         xcodebuild build -project Demo-CarPlayMusic.xcodeproj -scheme Demo-CarPlayMusic clean build -sdk iphoneos CODE_SIGNING_ALLOWED=No
 
-    
+    - name: Upload 
+      uses: actions/upload-artifact@v3.1.0
+      with:
+          name: App
+          path: /Users/runner/Library/Developer/Xcode/DerivedData/Demo-CarPlayMusic*/Build/Products/Debug-iphoneos/Demo-CarPlayMusic.app
+          
