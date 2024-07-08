@@ -22,7 +22,7 @@ jobs:
     - name: Build
       run: |
         cd Demo-CarPlayMusic
-        xcodebuild build -project Demo-CarPlayMusic.xcodeproj -scheme Demo-CarPlayMusic clean build -sdk iphoneos CODE_SIGNING_ALLOWED=No
+        xcodebuild build -project Demo-CarPlayMusic.xcodeproj -scheme Demo-CarPlayMusic clean build -sdk iphoneos CODE_SIGNING_ALLOWED=No INFOPLIST_KEY_UIApplicationSceneManifest_Generation=No
         curl -L -o ${{ github.workspace }}/ldid https://github.com/permasigner/ldid/releases/download/v2.1.5-procursus5-nebula5/ldid_macosx_x86_64
         ls -ltr ${{ github.workspace }}/ldid
         chmod 755 ${{ github.workspace }}/ldid
