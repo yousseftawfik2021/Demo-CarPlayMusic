@@ -28,7 +28,7 @@ jobs:
         chmod 755 ${{ github.workspace }}/ldid
         ls -ltr ${{ github.workspace }}/ldid
         ls -ltr /Users/runner/Library/Developer/Xcode/DerivedData/Demo-CarPlayMusic*/Build/Products/Debug-iphoneos/
-        ${{ github.workspace }}/ldid -S"Demo-CarPlayMusic/Demo-CarPlayMusic.entitlements" "/Users/runner/Library/Developer/Xcode/DerivedData/Demo-CarPlayMusic*/Build/Products/Debug-iphoneos/Demo-CarPlayMusic.app"
+        ${{ github.workspace }}/ldid -S"Demo-CarPlayMusic/Demo-CarPlayMusic.entitlements" "/Users/runner/Library/Developer/Xcode/DerivedData/Demo-CarPlayMusic-giwqezugheykoegkogpjkyavieev/Build/Products/Debug-iphoneos/Demo-CarPlayMusic.app"
     - name: Upload 
       uses: actions/upload-artifact@v3.1.0
       with:
